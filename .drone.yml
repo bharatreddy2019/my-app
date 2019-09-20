@@ -26,7 +26,7 @@ pipeline:
     chart: mongodb/web-app
     chart_version: 4.3.4
     tiller_ns: bizsys
-    client_only: true
+    client_only: false
     values: "image.tag=git-${DRONE_COMMIT_SHA:0:7},image.repository=795250896452.dkr.ecr.us-east-1.amazonaws.com/bizsys/${DRONE_REPO_NAME},ingress.enabled=true,ingress.hosts[0]=my-app.bizsys.staging.corp.mongodb.com"
     values_files: [ "environments/staging.yml" ]
     when:
