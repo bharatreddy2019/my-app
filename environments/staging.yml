@@ -2,3 +2,7 @@ env:
   APP_MESSAGE: Hello, MongoDB!
 envSecrets:
   APP_SECRET: my-secrets
+cronJobs:
+  - name: staging-my-job
+    schedule: "5 1 1 12 0"
+    command: ["python","app.py"]
