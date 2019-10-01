@@ -6,15 +6,7 @@ app = Flask(__name__)
 def index():
     text = "{}<br><br>Here's my secret: {}".format(
         os.environ.get('APP_MESSAGE', 'Hello, World!'),
-        os.environ.get('APP_SECRET'),
-        os.environ.get('SFDC_TEST_USERNAME'),
-        os.environ.get('SFDC_TEST_PASSWORD'),
-        os.environ.get('SFDC_TEST_TOKEN'),
-        os.environ.get('KEYID'),
-        os.environ.get('SKEYID'),
-        os.environ.get('BUCKETNAME'),
-        os.environ.get('RUNMODE'),
-        os.environ.get('INCREMENTALMODE')
+        os.environ.get('SFDC_TEST_USERNAME')
     )
     return text
 
