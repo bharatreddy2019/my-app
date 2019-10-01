@@ -2,6 +2,14 @@ env:
   APP_MESSAGE: Hello, MongoDB!
 envSecrets:
   APP_SECRET: my-secrets
+  SFDC_TEST_USERNAME: s3-secrets
+  SFDC_TEST_PASSWORD: s3-secrets
+  SFDC_TEST_TOKEN: s3-secrets
+  KEYID: s3-secrets
+  SKEYID: s3-secrets
+  BUCKETNAME: s3-secrets
+  RUNMODE: s3-secrets
+  INCREMENTALMODE: s3-secrets
 cronJobs:
   - name: staging-my-job
     schedule: "5 1 1 12 0"
